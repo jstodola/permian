@@ -19,7 +19,7 @@ from libpermian.plugins.beaker import BeakerCompose
 
 TAG_REGEXPS = (
     # product-1.2.3-state
-    re.compile('(?P<product>[^-]+)-(?P<major>[0-9]+).(?P<minor>[0-9]+).(?P<qr>[0-9]+)-(?P<state>[^-]+)'),
+    re.compile(r'(?P<product>[^-]+)-(?P<major>[0-9]+)\.(?P<minor>[0-9]+)\.(?P<qr>[0-9]+)-(?P<state>[^-]+)'),
 )
 
 def parse_koji_tag(tag):
