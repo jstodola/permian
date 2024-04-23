@@ -25,7 +25,7 @@ LOGGER = logging.getLogger(__name__)
 
 TAG_REGEXPS = (
     # product-1.2.3-state
-    re.compile('(?P<product>[^-]+)-(?P<major>[0-9]+).(?P<minor>[0-9]+).(?P<qr>[0-9]+)-((?P<flag>.+)-)?(?P<state>[^-]+)'),
+    re.compile('(?P<product>[^-]+)-(?P<major>[0-9]+).(?P<minor>[0-9]+)(.(?P<qr>[0-9]+))?-((?P<flag>.+)-)?(?P<state>[^-]+)'),
 )
 
 
